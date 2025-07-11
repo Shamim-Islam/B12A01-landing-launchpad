@@ -9,6 +9,4 @@
 
 - HTML
 - CSS
-- ⚠️ **No frameworks or libraries** allowed.
-
 ## 
