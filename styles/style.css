@@ -24,7 +24,8 @@
 }
 
 body {
-  background-color: rgba(255, 255, 255, 0.5);
+  /* background-color: rgba(255, 255, 255, 0.5); */
+  background-color: rgba(214, 221, 237, 0.5);
 }
 
 /* Shared style */
@@ -65,7 +66,7 @@ nav h1 {
 /* Header & Banner section style */
 
 header {
-  background-image: url("/Assets/Hero-bg.png");
+  background-image: url("../Assets/Hero-bg.png");
   background-position: center;
   background-size: contain;
   height: 100vh;
@@ -163,8 +164,67 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  gap: 115px;
 }
 
+.contact-title {
+  font-size: 90px;
+  font-weight: 700;
+  color: #252432;
+}
+
+.contact-form {
+  width: 50%;
+}
+
+.contact-form label {
+  font-size: 18px;
+  font-weight: 500;
+  font-family: "Inter", sans-serif;
+  color: #252432;
+  display: block;
+  margin-bottom: 10px;
+}
+
+input[type="text"], input[type="email"], textarea {
+/* .custom-input { */
+  height: 70px;
+  width: 100%;
+  border-radius: 10px;
+  display: block;
+  background-color: #fff;
+  border: 2px solid rgba(214, 221, 237, 1);
+  padding: 20px 32px;
+  margin-bottom: 20px;
+  font-size: 20px;
+  color: rgba(0, 0, 0, 0.5);
+  font-family: "Inter", sans-serif;
+}
+
+textarea {
+  height: 135px;
+}
+
+input[type="submit"] {
+  width: 100%;
+  height: 60px;
+}
+
+/* input:focus {
+  border-bottom: 2px solid #4E47FF;
+} */
+
+.custom-input {
+  /* border: none; */
+  /* border-bottom: 2px solid #ccc; */
+  /* padding: 8px 12px; */
+  outline: none;
+  transition: border-color 0.4s ease;
+}
+
+input[type="text"]:focus, input[type="email"]:hover, textarea:focus {
+  border-bottom: 3px solid#4E47FF; 
+}
 
 
 
