@@ -24,7 +24,6 @@
 }
 
 body {
-  /* background-color: rgba(255, 255, 255, 0.5); */
   background-color: rgba(214, 221, 237, 0.5);
 }
 
@@ -60,7 +59,12 @@ nav {
 }
 
 nav h1 {
-  font-size: 35px;
+  font-size: 40px;
+  color: #252432;
+}
+
+nav h1 span {
+  color: #4E47FF;
 }
 
 /* Header & Banner section style */
@@ -186,8 +190,7 @@ header {
   margin-bottom: 10px;
 }
 
-input[type="text"], input[type="email"], textarea {
-/* .custom-input { */
+.custom-input {
   height: 70px;
   width: 100%;
   border-radius: 10px;
@@ -199,6 +202,8 @@ input[type="text"], input[type="email"], textarea {
   font-size: 20px;
   color: rgba(0, 0, 0, 0.5);
   font-family: "Inter", sans-serif;
+  outline: none;
+  transition: border-color 0.4s ease;
 }
 
 textarea {
@@ -210,22 +215,49 @@ input[type="submit"] {
   height: 60px;
 }
 
-/* input:focus {
-  border-bottom: 2px solid #4E47FF;
-} */
-
-.custom-input {
-  /* border: none; */
-  /* border-bottom: 2px solid #ccc; */
-  /* padding: 8px 12px; */
-  outline: none;
-  transition: border-color 0.4s ease;
-}
-
-input[type="text"]:focus, input[type="email"]:hover, textarea:focus {
+.custom-input:hover, .custom-input:focus {
   border-bottom: 3px solid#4E47FF; 
 }
 
+/* Footer section style */
+
+footer {
+  text-align: center;
+  background-color: #fff;
+}
+
+.footer-section {
+  padding: 110px 0;
+  width: 530px;
+  margin: 0 auto;
+}
+
+.footer-section h1 {
+  font-size: 100px;
+  font-weight: 900;
+  color: #252432;
+}
+
+.footer-section h1 span {
+  color: #4E47FF; 
+}
+
+.footer-section p {
+  margin: 25px auto;
+  color: rgba(0, 0, 0, 0.5);
+}
+
+.footer-section ul {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  list-style: none;
+}
+
+.footer-section ul li a {
+  text-decoration: none;
+  color: rgba(0, 0, 0, 0.5);
+}
 
 
 
